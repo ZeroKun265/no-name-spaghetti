@@ -1,3 +1,4 @@
+# Idee
 - Visual novel stile DDLC + Minigame
 	- Di giorno: Cercare di convincere dell'esistenza degli alieni
 		- Hint un po' thriller, come minaccie etc..

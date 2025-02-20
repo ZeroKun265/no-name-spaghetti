@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://db2nomps23803"]
+
+[ext_resource type="Texture2D" uid="uid://byv3rftpjrtvt" path="res://icon.svg" id="1_excfa"]
+[ext_resource type="Texture2D" uid="uid://dixpww7ur6dji" path="res://demos/sub-viewport-demo/Piston.png" id="1_l2de0"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_right = 320.0
+offset_bottom = 180.0
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(320, 180)
+render_target_update_mode = 4
+
+[node name="Piston" type="Sprite2D" parent="SubViewportContainer/SubViewport"]
+texture_filter = 1
+position = Vector2(283.355, 172.68)
+texture = ExtResource("1_l2de0")
+
+[node name="Sprite2D" type="Sprite2D" parent="SubViewportContainer/SubViewport"]
+texture_filter = 1
+position = Vector2(123.56, 113.055)
+texture = ExtResource("1_excfa")

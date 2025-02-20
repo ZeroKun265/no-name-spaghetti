@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://qce05q40jxu4"]
+
+[ext_resource type="PackedScene" uid="uid://db2nomps23803" path="res://demos/sub-viewport-demo/low_res.tscn" id="1_7s4ne"]
+[ext_resource type="Texture2D" uid="uid://bgi38e25pdhst" path="res://demos/sub-viewport-demo/Pink Hair Cute High School Anime Girl Transparent PNG Download.png" id="2_38xd2"]
+
+[node name="High res" type="Node2D"]
+
+[node name="Low Res" parent="." instance=ExtResource("1_7s4ne")]
+offset_right = 320.0
+offset_bottom = 180.0
+scale = Vector2(6, 6)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PinkHairCuteHighSchoolAnimeGirlTransparentPngDownload" type="Sprite2D" parent="."]
+texture_filter = 6
+position = Vector2(1542, 568)
+scale = Vector2(1.14486, 1.14486)
+texture = ExtResource("2_38xd2")
