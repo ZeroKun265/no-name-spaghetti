@@ -1,4 +1,5 @@
 # Idee
+## Mecchaniche
 - Visual novel stile DDLC + Minigame
 	- Di giorno: Cercare di convincere dell'esistenza degli alieni
 		- Hint un po' thriller, come minaccie etc..
@@ -6,3 +7,5 @@
 		- Minigame più spooky, horro, jumpscare
 			- Minigame senza tempo dove bisogna durare almeno fino a x tempo per svegliarsi la mattina presto, se ci si sveglia di notte 
 
+> [!note] 
+> Idea sviluppata in: [[Padrino alieno]]
