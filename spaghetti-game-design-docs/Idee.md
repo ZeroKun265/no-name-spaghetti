@@ -6,8 +6,6 @@
 	- Di notte: Sopravvivere agli alieni
 		- Minigame più spooky, horro, jumpscare
 			- Minigame senza tempo dove bisogna durare almeno fino a x tempo per svegliarsi la mattina presto, se ci si sveglia di notte 
-
-
 > [!note] 
 > Idea sviluppata in: [[Padrino alieno]]
 
