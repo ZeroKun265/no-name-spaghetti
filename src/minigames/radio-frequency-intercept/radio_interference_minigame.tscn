@@ -1,0 +1,71 @@
+[gd_scene load_steps=9 format=3 uid="uid://b2uy51mmwjx3w"]
+
+[ext_resource type="Texture2D" uid="uid://bt2aci2asnks3" path="res://minigames/radio-frequency-intercept/assets/radio-background.png" id="1_4os57"]
+[ext_resource type="Texture2D" uid="uid://cdclomr25dm0p" path="res://minigames/radio-frequency-intercept/assets/Knob.png" id="1_ek770"]
+[ext_resource type="Texture2D" uid="uid://o2s5beqyjxqm" path="res://minigames/radio-frequency-intercept/assets/radio-display.png" id="3_bdg71"]
+[ext_resource type="Script" path="res://minigames/radio-frequency-intercept/Knob.gd" id="4_fppda"]
+[ext_resource type="Shader" path="res://minigames/radio-frequency-intercept/radio_interference_minigame.gdshader" id="4_xgk8b"]
+[ext_resource type="Texture2D" uid="uid://dtmybsfs5cx81" path="res://minigames/radio-frequency-intercept/assets/value-display.png" id="5_momit"]
+[ext_resource type="Texture2D" uid="uid://dupcopbmq2o6s" path="res://minigames/radio-frequency-intercept/assets/radio-display-border.png" id="6_6qula"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3q3wn"]
+shader = ExtResource("4_xgk8b")
+shader_parameter/param_frequency = 5.0
+shader_parameter/param_amplitude = -0.202
+shader_parameter/line_color = Vector4(0.207, 0.432, 0.105, 1)
+shader_parameter/rect_color = Vector4(0, 0, 0, 1)
+
+[node name="radio-interference-minigame" type="Node2D"]
+scale = Vector2(6, 6)
+
+[node name="Radio-background" type="Sprite2D" parent="."]
+texture = ExtResource("1_4os57")
+centered = false
+
+[node name="Amplitudef Node" type="Sprite2D" parent="Radio-background" node_paths=PackedStringArray("label")]
+position = Vector2(263, 131)
+texture = ExtResource("1_ek770")
+script = ExtResource("4_fppda")
+rotate_clockwise = "ui_right"
+rotate_counterclockwise = "ui_left"
+label = NodePath("../../Amplitude-display/Label")
+
+[node name="Frequency Knob" type="Sprite2D" parent="Radio-background" node_paths=PackedStringArray("label")]
+position = Vector2(57, 131)
+texture = ExtResource("1_ek770")
+script = ExtResource("4_fppda")
+rotate_clockwise = "keyboard_d"
+rotate_counterclockwise = "keyboard_a"
+label = NodePath("../../Frequency-display/Label")
+
+[node name="Radio-display" type="Sprite2D" parent="Radio-background"]
+material = SubResource("ShaderMaterial_3q3wn")
+position = Vector2(162, 56)
+texture = ExtResource("3_bdg71")
+
+[node name="Radio-display-border" type="Sprite2D" parent="Radio-background/Radio-display"]
+texture = ExtResource("6_6qula")
+
+[node name="Frequency-display" type="Sprite2D" parent="."]
+position = Vector2(161, 103)
+texture = ExtResource("5_momit")
+
+[node name="Label" type="Label" parent="Frequency-display"]
+offset_left = -26.0
+offset_top = -12.0
+offset_right = 26.0
+offset_bottom = 11.0
+text = "
+"
+
+[node name="Amplitude-display" type="Sprite2D" parent="."]
+position = Vector2(161, 139)
+texture = ExtResource("5_momit")
+
+[node name="Label" type="Label" parent="Amplitude-display"]
+offset_left = -26.0
+offset_top = -12.0
+offset_right = 26.0
+offset_bottom = 11.0
+text = "
+"
