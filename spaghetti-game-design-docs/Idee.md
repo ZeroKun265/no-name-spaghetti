@@ -5,7 +5,8 @@
 		- Hint un po' thriller, come minaccie etc..
 	- Di notte: Sopravvivere agli alieni
 		- Minigame più spooky, horro, jumpscare
-			- Minigame senza tempo dove bisogna durare almeno fino a x tempo per svegliarsi la mattina presto, se ci si sveglia di notte 
+			- Minigame senza tempo dove bisogna durare almeno fino a x tempo per svegliarsi la mattina presto, se ci si sveglia di notte
+                        - Se il minigame si fallisce (livello di sfida alto oppure minigame a livelli/infinito con livello di sfida incrementale) si ottiene un jumpscare come penitenza :)
 > [!note] 
 > Idea sviluppata in: [[Padrino alieno]]
 
